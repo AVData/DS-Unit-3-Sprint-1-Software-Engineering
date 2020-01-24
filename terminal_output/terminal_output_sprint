@@ -1,0 +1,1251 @@
+Last login: Fri Jan 17 08:03:23 on ttys004
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py 
+  File "acme_test.py", line 20
+    def test_object_build('self'):
+                               ^
+SyntaxError: invalid syntax
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertEqual(prod.stealability, 'Kinda stealable.')
+AssertionError: <bound method Product.stealability of <acme.Product object at 0x10986aad0>> != 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertEqual(prod.stealability(), 'Kinda stealable.')
+AssertionError: None != 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+  File "acme_test.py", line 25
+    self.assertEqual(prod.stealability(), Kinda stealable.)
+                                                        ^
+SyntaxError: invalid syntax
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Not so stealiable...
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertEqual(prod.stealability(.5), 'Kinda stealable.')
+AssertionError: None != 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Not so stealiable...
+E
+======================================================================
+ERROR: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertAlmostEqual(prod.stealability(.5), 'Kinda stealable.')
+  File "/Users/flanuer/opt/anaconda3/lib/python3.7/unittest/case.py", line 883, in assertAlmostEqual
+    diff = abs(first - second)
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'str'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.004s
+
+FAILED (errors=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+E
+======================================================================
+ERROR: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertAlmostEqual(prod.stealability(), 'Kinda stealable.')
+  File "/Users/flanuer/opt/anaconda3/lib/python3.7/unittest/case.py", line 883, in assertAlmostEqual
+    diff = abs(first - second)
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'str'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (errors=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertEqual(prod.stealability(), 'Kinda stealable.')
+AssertionError: None != 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..E
+======================================================================
+ERROR: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertEqual(prod.stealability(self, price = 10, weight = 20), 'Kinda stealable.')
+TypeError: stealability() got multiple values for argument 'price'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertEqual(prod.stealability(price = 10), 'Kinda stealable.')
+AssertionError: None != 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertEqual(prod.stealability(price = 10, weight = 20), 'Kinda stealable.')
+AssertionError: None != 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertEqual(prod.stealability(), 'Kinda stealable.')
+AssertionError: None != 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertEqual(prod.stealability(10, 20), 'Kinda stealable.')
+AssertionError: None != 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertEqual(prod.stealability(10, 20), 'Kinda stealable.')
+AssertionError: None != 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..E
+======================================================================
+ERROR: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertIs(prod.stealability(self, 10, 20), 'Kinda stealable.')
+TypeError: stealability() takes from 1 to 3 positional arguments but 4 were given
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (errors=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..E
+======================================================================
+ERROR: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+TypeError: test_object_build() missing 2 required positional arguments: 'price' and 'weight'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertIs(prod.stealability(), 'Kinda stealable.')
+AssertionError: None is not 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertIs(prod.stealability(price = 10, weight = 20), 'Kinda stealable.')
+AssertionError: None is not 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Product
+>>> prod = Product('name')
+>>> prod.stealability()
+Kinda stealable.
+>>> prod.stealability(price = 22)
+Very Stealable!
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertIs(prod.stealability(price = 10), 'Kinda stealable.')
+AssertionError: None is not 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..E
+======================================================================
+ERROR: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+TypeError: test_object_build() missing 1 required positional argument: 'price'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Product
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Very Stealable!
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 25, in test_object_build
+    self.assertIs(prod.stealability(price = 22), 'Kinda stealable.')
+AssertionError: None is not 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Very Stealable!
+...boom!
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 27, in test_object_build
+    self.assertIs(stealable, 'Kinda stealable.')
+AssertionError: None is not 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Very Stealable!
+...boom!
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 28, in test_object_build
+    self.assertIs(explode, '...boom!')
+AssertionError: None is not '...boom!'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+Traceback (most recent call last):
+  File "acme_test.py", line 3, in <module>
+    from product import stealability, explode
+ModuleNotFoundError: No module named 'product'
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+Traceback (most recent call last):
+  File "acme_test.py", line 3, in <module>
+    from Product import stealability, explode
+ModuleNotFoundError: No module named 'Product'
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+Traceback (most recent call last):
+  File "acme_test.py", line 3, in <module>
+    from acme import stealability, explode
+ImportError: cannot import name 'stealability' from 'acme' (/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 26, in test_object_build
+    self.assertIs(prod.stealability(), 'Kinda stealable.')
+AssertionError: None is not 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..E
+======================================================================
+ERROR: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 26, in test_object_build
+    self.assertIs(prod.stealability(self), 'Kinda stealable.')
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 23, in stealability
+    self.price = float(price/weight)
+TypeError: unsupported operand type(s) for /: 'AcmeProductTests' and 'int'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (errors=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3             
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import product from acme.py
+  File "<stdin>", line 1
+    import product from acme.py
+                      ^
+SyntaxError: invalid syntax
+>>> from acme.py import Product
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'acme.py'; 'acme' is not a package
+>>> from acme import Product
+>>> prod = Product('some')
+>>> prod.stealability()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: stealability() missing 2 required positional arguments: 'price' and 'weight'
+>>> prod
+<acme.Product object at 0x10e691850>
+>>> prod.price = 10
+>>> prod.weight = 20
+>>> prod.stealability()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: stealability() missing 2 required positional arguments: 'price' and 'weight'
+>>> prod.stealability(price = 10, weight = 20)
+Kinda stealable.
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..E
+======================================================================
+ERROR: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 26, in test_object_build
+    self.assertIs(prod.stealability(self), 'Kinda stealable.')
+TypeError: stealability() missing 1 required positional argument: 'weight'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (errors=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..E
+======================================================================
+ERROR: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 26, in test_object_build
+    self.assertIs(prod.stealability(), 'Kinda stealable.')
+TypeError: stealability() missing 2 required positional arguments: 'price' and 'weight'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 26, in test_object_build
+    self.assertIs(prod.stealability(10, 20), 'Kinda stealable.')
+AssertionError: None is not 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 26, in test_object_build
+    self.assertIs(prod.stealability(10, 20), 'Kinda stealable.')
+AssertionError: None is not 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+Traceback (most recent call last):
+  File "acme_test.py", line 2, in <module>
+    from acme import Product
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 8, in <module>
+    class Product:
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 19, in Product
+    def stealability(self,  price = self.price, weight=self.weight):
+NameError: name 'self' is not defined
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+Traceback (most recent call last):
+  File "acme_test.py", line 2, in <module>
+    from acme import Product
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 8, in <module>
+    class Product:
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 19, in Product
+    def stealability(self,  price = self.price, weight=self.weight):
+NameError: name 'self' is not defined
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 26, in test_object_build
+    self.assertIs(prod.stealability(), 'Kinda stealable.')
+AssertionError: None is not 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 26, in test_object_build
+    self.assertIs(prod.stealability(), 'Kinda stealable.')
+AssertionError: None is not 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 26, in test_object_build
+    self.assertIs(prod.stealability(10, 20), 'Kinda stealable.')
+AssertionError: None is not 'Kinda stealable.'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+E
+======================================================================
+ERROR: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 26, in test_object_build
+    self.assertIs(prod.stealability(10, 20))
+TypeError: assertIs() missing 1 required positional argument: 'expr2'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (errors=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 26, in test_object_build
+    self.assertIs(prod.stealability(10, 20), True)
+AssertionError: None is not True
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..E
+======================================================================
+ERROR: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 26, in test_object_build
+    self.assertIs(stealability(), True)
+NameError: name 'stealability' is not defined
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 27, in test_object_build
+    self.assertIs(prod.stealability(), True)
+AssertionError: None is not True
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 26, in test_object_build
+    self.assertIs(prod.stealability(), True)
+AssertionError: None is not True
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....boom!
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 26, in test_object_build
+    self.assertIs(prod.explode(), '...boom!')
+AssertionError: None is not '...boom!'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Product
+>>> prod = Product('s')
+>>> prod.explode()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 37, in explode
+    flammability = int(flammability*weight)
+TypeError: unsupported operand type(s) for *: 'Product' and 'int'
+>>> from acme import Product
+>>> prod = Product('s')
+>>> prod.explode()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 37, in explode
+    explosion_prod = int(flammability*weight)
+TypeError: unsupported operand type(s) for *: 'Product' and 'int'
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Product
+>>> prod = Product('s')
+>>> prod.explode()
+...boom!
+>>> prod.explode(.1)
+...boom!
+>>> prod.explode(flammability = .1)
+...boom!
+>>> prod.exlpode(.2, 1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Product' object has no attribute 'exlpode'
+>>> prod.eplode()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Product' object has no attribute 'eplode'
+>>> prod.explode()
+...boom!
+>>> prod.explode
+<bound method Product.explode of <acme.Product object at 0x106443850>>
+>>> dir(prod.explode)
+['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__func__', '__ge__', '__get__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__self__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__']
+>>> prod.explode(.1, .2)
+...boom!
+>>> prod.explode()
+...boom!
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....boom!
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 28, in test_object_build
+    self.assertIs(prod.explode(), '...boom!')
+AssertionError: None is not '...boom!'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....boom!
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 28, in test_object_build
+    self.assertIs(prod.explode(), '...boom!')
+AssertionError: None is not '...boom!'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Product
+>>> prod = Product('s')
+>>> prod.weight
+20
+>>> prod.weight = 2
+>>> prod.weight
+2
+>>> prod.explode()
+...boom!
+>>> prod.exlpode()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Product' object has no attribute 'exlpode'
+>>> prod.explode()
+...boom!
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Product
+>>> prod = Product('s')
+>>> prod.weight
+20
+>>> prod.explode()
+...boom!
+>>> prod.weight = 2
+>>> prod.weight
+2
+>>> prod.explode()
+...fizzle
+>>> prod.weight = 200
+>>> prod.weight
+200
+>>> prod.explode()
+...BABOOM!!
+>>> exit(0
+... 
+... d
+  File "<stdin>", line 3
+    d
+    ^
+SyntaxError: invalid syntax
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....boom!
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 26, in test_object_build
+    self.assertIs(prod.explode(), '...boom!')
+AssertionError: None is not '...boom!'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....fizzle
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 28, in test_object_build
+    self.assertIs(prod.explode(), '...boom!')
+AssertionError: None is not '...boom!'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....fizzle
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 28, in test_object_build
+    self.assertEqual(prod.explode(), '...boom!')
+AssertionError: None != '...boom!'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....boom!
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 28, in test_object_build
+    self.assertEqual(prod.explode(), '...boom!')
+AssertionError: None != '...boom!'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....boom!
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 28, in test_object_build
+    self.assertEqual(str(prod.explode()), '...boom!')
+AssertionError: 'None' != '...boom!'
+- None
++ ...boom!
+
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....boom!
+FKinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 28, in test_object_build
+    self.assertEqual(str(prod.explode()), '...boom!')
+AssertionError: 'None' != '...boom!'
+- None
++ ...boom!
+
+
+======================================================================
+FAIL: test_object_build_2 (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 37, in test_object_build_2
+    self.assertEqual(str(prod.stealability()), 'Kinda stealable')
+AssertionError: 'None' != 'Kinda stealable'
+- None
++ Kinda stealable
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=2)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....boom!
+FKinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 28, in test_object_build
+    self.assertEqual(str(prod.explode()), '...boom!')
+AssertionError: 'None' != '...boom!'
+- None
++ ...boom!
+
+
+======================================================================
+FAIL: test_object_build_2 (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 37, in test_object_build_2
+    self.assertEqual(str(prod.stealability()), 'Kinda stealable')
+AssertionError: 'None' != 'Kinda stealable'
+- None
++ Kinda stealable
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=2)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....boom!
+FKinda stealable.
+F
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 28, in test_object_build
+    self.assertEqual(str(prod.explode()), '...boom!')
+AssertionError: 'None' != '...boom!'
+- None
++ ...boom!
+
+
+======================================================================
+FAIL: test_object_build_2 (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 37, in test_object_build_2
+    self.assertEqual(str(prod.stealability(10, 20)), 'Kinda stealable')
+AssertionError: 'None' != 'Kinda stealable'
+- None
++ Kinda stealable
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.003s
+
+FAILED (failures=2)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....boom!
+FKinda stealable.
+Kinda stealable.
+.
+======================================================================
+FAIL: test_object_build (__main__.AcmeProductTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 28, in test_object_build
+    self.assertEqual(str(prod.explode()), '...boom!')
+AssertionError: 'None' != '...boom!'
+- None
++ ...boom!
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+Kinda stealable.
+.
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..Kinda stealable.
+Kinda stealable.
+.
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....boom!
+...boom!
+.Kinda stealable.
+Kinda stealable.
+.
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....boom!
+...boom!
+.Kinda stealable.
+Kinda stealable.
+.
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....boom!
+...boom!
+.Kinda stealable.
+Kinda stealable.
+.
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....boom!
+...boom!
+.Kinda stealable.
+Kinda stealable.
+.
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....fizzle
+...boom!
+.Kinda stealable.
+Kinda stealable.
+.
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....fizzle
+...boom!
+.Kinda stealable.
+Kinda stealable.
+.
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....fizzle
+...boom!
+.Not so stealiable...
+Kinda stealable.
+.
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....fizzle
+...boom!
+.Not so stealiable...
+Kinda stealable.
+..
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....fizzle
+...boom!
+.Not so stealiable...
+Kinda stealable.
+..E
+======================================================================
+ERROR: test_legal_names (__main__.AcmeReportTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 60, in test_legal_names
+    self.assertIn({adjective:ADJECTIVES, space:' ', nouns:NOUNS},
+NameError: name 'adjective' is not defined
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (errors=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....fizzle
+...boom!
+.Not so stealiable...
+Kinda stealable.
+..E
+======================================================================
+ERROR: test_legal_names (__main__.AcmeReportTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 60, in test_legal_names
+    adjective = random.choice(ADJECTIVES)
+NameError: name 'random' is not defined
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (errors=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....fizzle
+...boom!
+.Not so stealiable...
+Kinda stealable.
+..F
+======================================================================
+FAIL: test_legal_names (__main__.AcmeReportTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 63, in test_legal_names
+    generate_products(num_products=30))
+AssertionError: {'Awesome': ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved'], 'Mousetrap': ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', '???']} not found in ['Portable Mousetrap', 'Shiny Mousetrap', 'Impressive Catapult', 'Awesome Mousetrap', 'Impressive Mousetrap', 'Impressive Catapult', 'Shiny Disguise', 'Awesome ???', 'Improved Mousetrap', 'Shiny ???', 'Shiny Catapult', 'Improved Mousetrap', 'Awesome Mousetrap', 'Portable Catapult', 'Awesome Mousetrap', 'Awesome Mousetrap', 'Shiny Disguise', 'Impressive Disguise', 'Awesome Disguise', 'Impressive Catapult', 'Shiny Catapult', 'Shiny ???', 'Impressive Catapult', 'Improved Disguise', 'Improved Disguise', 'Awesome Disguise', 'Shiny Disguise', 'Impressive Anvil', 'Portable Disguise', 'Improved Mousetrap']
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % 
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....fizzle
+...boom!
+.Not so stealiable...
+Kinda stealable.
+..F
+======================================================================
+FAIL: test_legal_names (__main__.AcmeReportTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 61, in test_legal_names
+    generate_products(num_products=30))
+AssertionError: 'Impressive Mousetrap' not found in ['Improved Catapult', 'Shiny ???', 'Awesome Catapult', 'Awesome Catapult', 'Awesome Mousetrap', 'Portable ???', 'Impressive Disguise', 'Portable ???', 'Impressive Disguise', 'Shiny Disguise', 'Awesome Catapult', 'Shiny Anvil', 'Impressive Catapult', 'Awesome ???', 'Portable Disguise', 'Improved ???', 'Impressive Disguise', 'Impressive Catapult', 'Improved Anvil', 'Shiny Catapult', 'Shiny Mousetrap', 'Improved Catapult', 'Awesome Anvil', 'Impressive ???', 'Improved ???', 'Improved Catapult', 'Shiny Catapult', 'Portable ???', 'Shiny Disguise', 'Portable Catapult']
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....fizzle
+...boom!
+.Not so stealiable...
+Kinda stealable.
+...
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....fizzle
+...boom!
+.Not so stealiable...
+Kinda stealable.
+...
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....fizzle
+...boom!
+.Not so stealiable...
+Kinda stealable.
+..F
+======================================================================
+FAIL: test_legal_names (__main__.AcmeReportTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 61, in test_legal_names
+    generate_products(num_products=30))
+AssertionError: 'Shiny Catapult' not found in ['Portable ???', 'Improved ???', 'Portable Catapult', 'Awesome ???', 'Impressive ???', 'Portable ???', 'Awesome Anvil', 'Impressive Anvil', 'Portable Mousetrap', 'Shiny Anvil', 'Impressive Anvil', 'Impressive ???', 'Portable Catapult', 'Impressive Catapult', 'Improved Mousetrap', 'Awesome ???', 'Impressive Anvil', 'Shiny ???', 'Portable Disguise', 'Improved Disguise', 'Shiny Disguise', 'Shiny Disguise', 'Improved Catapult', 'Impressive Mousetrap', 'Impressive Mousetrap', 'Portable Disguise', 'Portable Disguise', 'Impressive Disguise', 'Awesome Anvil', 'Impressive Disguise']
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....fizzle
+...boom!
+.Not so stealiable...
+Kinda stealable.
+..F
+======================================================================
+FAIL: test_legal_names (__main__.AcmeReportTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "acme_test.py", line 61, in test_legal_names
+    generate_products(num_products=30))
+AssertionError: 'Improved ???' not found in ['Awesome Disguise', 'Portable ???', 'Awesome Catapult', 'Awesome Mousetrap', 'Portable ???', 'Awesome Mousetrap', 'Awesome Mousetrap', 'Impressive Mousetrap', 'Portable Anvil', 'Awesome Mousetrap', 'Awesome ???', 'Awesome Anvil', 'Impressive Catapult', 'Impressive Mousetrap', 'Improved Anvil', 'Awesome Mousetrap', 'Shiny Mousetrap', 'Portable Anvil', 'Portable Catapult', 'Portable Anvil', 'Awesome Anvil', 'Awesome Disguise', 'Portable ???', 'Improved Anvil', 'Impressive Catapult', 'Improved Anvil', 'Awesome Catapult', 'Impressive Disguise', 'Portable Disguise', 'Improved Catapult']
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+FAILED (failures=1)
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % ls
+Pipfile							challenge.md
+README.md						lamb.jpg
+__pycache__						module1-python-modules-packages-and-environments
+acme.py							module2-oop-code-style-and-reviews
+acme_report.py						module3-containers-and-reproducible-builds
+acme_test.py						module4-software-testing-documentation-and-licensing
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % touch README2.md
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % vm README2.md q_and_a.py
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % ls
+Pipfile							lamb.jpg
+README.md						module1-python-modules-packages-and-environments
+__pycache__						module2-oop-code-style-and-reviews
+acme.py							module3-containers-and-reproducible-builds
+acme_report.py						module4-software-testing-documentation-and-licensing
+acme_test.py						q_and_a.py
+challenge.md
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % atom .
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Product
+>>> prod = Product('A Cool Toy')
+>>> prod.name
+'A Cool Toy'
+>>> prod.price
+10
+>>> prod.weight
+20
+>>> prod.flammability
+0.5
+>>> prod.identifier
+51179293
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Product
+>>> prod = Product('A Cool Toy')
+>>> prod.stealability()
+Kinda stealable.
+>>> prod.explode()
+...boom!
+>>> from acme BoxingGlove
+  File "<stdin>", line 1
+    from acme BoxingGlove
+                        ^
+SyntaxError: invalid syntax
+>>> from acme import BoxingGlove
+>>> glove = BoxingGlove('Punchy the Third')
+>>> glove.price
+10
+>>> glove.weight
+10
+>>> glove.punch()
+Hey that hurt!
+>>> glove.explode()
+...it's a glove.
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+ACME CORPORATION INVENTORY REPORT 
+ Unique product names:  19 
+ Average price:  57.36666666666667 
+ Average weight:  47.233333333333334 
+ Average Flammability:  1.3673211190842127
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.....fizzle
+...boom!
+.Not so stealiable...
+Kinda stealable.
+...
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % 

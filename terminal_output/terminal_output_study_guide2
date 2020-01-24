@@ -1,0 +1,354 @@
+Last login: Fri Jan 17 01:40:51 on ttys002
+(base) flanuer@agustins-mbp sample_module % cd ..
+(base) flanuer@agustins-mbp lambdata % cd ..
+(base) flanuer@agustins-mbp lambda % ls
+Course_material				__pycache__				hw.py
+DS-Unit-3-Sprint-1-Software-Engineering	command-line-cheat-sheet-large01.png	imp_docs
+LambData				command-line-cheat-sheet-large02.png
+Precourse				ebooks
+(base) flanuer@agustins-mbp lambda % git clone 
+(base) flanuer@agustins-mbp lambda % ls
+Course_material				__pycache__				hw.py
+DS-Unit-3-Sprint-1-Software-Engineering	command-line-cheat-sheet-large01.png	imp_docs
+LambData				command-line-cheat-sheet-large02.png
+Precourse				ebooks
+(base) flanuer@agustins-mbp lambda % ls
+Course_material				__pycache__				hw.py
+DS-Unit-3-Sprint-1-Software-Engineering	command-line-cheat-sheet-large01.png	imp_docs
+LambData				command-line-cheat-sheet-large02.png
+Precourse				ebooks
+(base) flanuer@agustins-mbp lambda % clear
+
+
+
+
+(base) flanuer@agustins-mbp lambda % ls
+Course_material				__pycache__				hw.py
+DS-Unit-3-Sprint-1-Software-Engineering	command-line-cheat-sheet-large01.png	imp_docs
+LambData				command-line-cheat-sheet-large02.png
+Precourse				ebooks
+(base) flanuer@agustins-mbp lambda % git clone https://github.com/AVData/sample_module.git
+Cloning into 'sample_module'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+(base) flanuer@agustins-mbp lambda % ls
+Course_material				__pycache__				hw.py
+DS-Unit-3-Sprint-1-Software-Engineering	command-line-cheat-sheet-large01.png	imp_docs
+LambData				command-line-cheat-sheet-large02.png	sample_module
+Precourse				ebooks
+(base) flanuer@agustins-mbp lambda % cd lambdata
+(base) flanuer@agustins-mbp lambdata % ls
+LICENSE				build				notes_thursday
+Pipfile				dist				sample_file_docker
+Pipfile.lock			lambdata.egg-info		sample_module
+README.md			lambdata_AVData			setup.py
+__pycache__			lambdata_AVData.egg-info	text_for_sample_code.txt
+(base) flanuer@agustins-mbp lambdata % cd sample_module
+(base) flanuer@agustins-mbp sample_module % ls
+sprint_guide.py
+(base) flanuer@agustins-mbp sample_module % mv sprint_guide.py lambda 
+(base) flanuer@agustins-mbp sample_module % ls
+lambda
+(base) flanuer@agustins-mbp sample_module % cd lambda
+cd: not a directory: lambda
+(base) flanuer@agustins-mbp sample_module % mv lambda sprint_guide.py
+(base) flanuer@agustins-mbp sample_module % ls
+sprint_guide.py
+(base) flanuer@agustins-mbp sample_module % mv sprint_guide.py lambdata
+(base) flanuer@agustins-mbp sample_module % ls
+lambdata
+(base) flanuer@agustins-mbp sample_module % mv lambdata sprint_guide.py
+(base) flanuer@agustins-mbp sample_module % ls
+sprint_guide.py
+(base) flanuer@agustins-mbp sample_module % cd ..
+(base) flanuer@agustins-mbp lambdata % ls
+LICENSE				build				notes_thursday
+Pipfile				dist				sample_file_docker
+Pipfile.lock			lambdata.egg-info		sample_module
+README.md			lambdata_AVData			setup.py
+__pycache__			lambdata_AVData.egg-info	text_for_sample_code.txt
+(base) flanuer@agustins-mbp lambdata % cd ..
+(base) flanuer@agustins-mbp lambda % ls
+Course_material				__pycache__				hw.py
+DS-Unit-3-Sprint-1-Software-Engineering	command-line-cheat-sheet-large01.png	imp_docs
+LambData				command-line-cheat-sheet-large02.png	sample_module
+Precourse				ebooks
+(base) flanuer@agustins-mbp lambda % atom .
+(base) flanuer@agustins-mbp lambda % ls
+Course_material				__pycache__				hw.py
+DS-Unit-3-Sprint-1-Software-Engineering	command-line-cheat-sheet-large01.png	imp_docs
+LambData				command-line-cheat-sheet-large02.png	sample_module
+Precourse				ebooks
+(base) flanuer@agustins-mbp lambda % cd sample_module
+(base) flanuer@agustins-mbp sample_module % ls
+LICENSE		README.md	sprint_guide.py
+(base) flanuer@agustins-mbp sample_module % pipenv install pandas numpy
+Creating a virtualenv for this project…
+Pipfile: /Users/flanuer/Downloads/Nitsuga/Lambda/sample_module/Pipfile
+Using /Users/flanuer/opt/anaconda3/bin/python (3.7.4) to create virtualenv…
+⠴ Creating virtual environment...Already using interpreter /Users/flanuer/opt/anaconda3/bin/python
+Using base prefix '/Users/flanuer/opt/anaconda3'
+New python executable in /Users/flanuer/.local/share/virtualenvs/sample_module-Cw5ViEhF/bin/python
+Installing setuptools, pip, wheel...
+done.
+
+✔ Successfully created virtual environment! 
+Virtualenv location: /Users/flanuer/.local/share/virtualenvs/sample_module-Cw5ViEhF
+Creating a Pipfile for this project…
+Installing pandas…
+Adding pandas to Pipfile's [packages]…
+✔ Installation Succeeded 
+Installing numpy…
+Adding numpy to Pipfile's [packages]…
+✔ Installation Succeeded 
+Pipfile.lock not found, creating…
+Locking [dev-packages] dependencies…
+Locking [packages] dependencies…
+✔ Success! 
+Updated Pipfile.lock (8a0daf)!
+Installing dependencies from Pipfile.lock (8a0daf)…
+  🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 5/5 — 00:00:01
+To activate this project's virtualenv, run pipenv shell.
+Alternatively, run a command inside the virtualenv with pipenv run.
+(base) flanuer@agustins-mbp sample_module % pipenv shell
+Launching subshell in virtual environment…
+ . /Users/flanuer/.local/share/virtualenvs/sample_module-Cw5ViEhF/bin/activate
+(base) flanuer@agustins-mbp sample_module %  . /Users/flanuer/.local/share/virtualenvs/sample_module-Cw5ViEhF/bin/activate
+(sample_module) (base) flanuer@agustins-mbp sample_module % ls
+LICENSE		Pipfile		Pipfile.lock	README.md	sprint_guide.py
+(sample_module) (base) flanuer@agustins-mbp sample_module % python3 sprint_quide.py
+python3: can't open file 'sprint_quide.py': [Errno 2] No such file or directory
+(sample_module) (base) flanuer@agustins-mbp sample_module % cat sprint_quide.py
+cat: sprint_quide.py: No such file or directory
+(sample_module) (base) flanuer@agustins-mbp sample_module % cat sprint_guide.py
+# Overview of what to expect on tomorrow's SC:
+# - You will be writing and running code locally in .py files, not in a notebook
+# - You be given some info and have to make a class and child class including methods and fields (similar to the game class made during lecture)
+# - You will create some unit tests based on your classes
+# - Provide text answers to questions surrounding concepts learned this week
+# - You won't have to package and upload to test pypi
+
+# Notes
+# - Constructor:
+        # special kind of method that py calls when it instantiatites an
+        # object using the definitions found in it's respective class
+        # example is the __init__() method for a class; allows the class to
+        # initialize the attributes of the class
+# - Attributes:
+        # Instance attribute: a py variable that belongs to class; belongs to one
+        # and only one object
+        # Class attribute a py variable that belongs to a class rather than a
+        # particular object
+# - Field:
+        # variables inside of a class
+        # self. is considerd a feild
+# - Methods:
+        # function that lives inside a class
+        # is a method that is boud to a class rather than it's object.  It
+        # doesn't require creation of a class instance
+# - Instance:
+        # in py a class is created with keyword arg 'Class'; object is created
+        # using the constructor of the class; this object is then called the
+        # instance of the class.
+        # self.
+# - Useful Class links:
+        # https://docs.python.org/2/tutorial/classes.html
+        # https://www.toptal.com/python/python-class-attributes-an-overly-thorough-guide
+
+'''
+Example: Here should lie a doc string in the form (Classes to ..)
+'''
+# the doc string privdes information on the use of the classes
+
+# sample code:
+
+from random import random
+
+class Game: # Here the class is called 'Game'
+    '''
+    General rep of some kind of game.
+    ''' #this doc string provides info on what's to come
+    def __init__(self, player1 = 'Cody', player2 = 'Agustin'):
+    # we are using __init__ constructor to initialize the the class attributes
+        self.rounds = 2
+        self.current_round = 0
+        self.player1 = player1
+        self.player2 = player2
+
+    def print_players(self):
+        '''
+        Printing the players in the game
+        '''
+        print('{} is playing agains {}'.format(self.player1, self.player2))
+
+    def add_round(self):
+        '''
+        Incrementing the number of rounds by 1
+        '''
+        self.rounds += 1
+
+    def winner(self):
+        '''
+        Picking a winer using random that was previously imported
+        '''
+        return self.player1 if random() > 0.5 else self.player2
+
+game1 = Game()
+
+class Tic(Game):
+    '''
+    TicTacToe created as a subclass of Game
+    '''
+    def __init__(self, rounds = 3, player1 = 'Nitsuga', player2 = 'Auggie'):
+        super().__init__(rounds, player1, player2)
+
+    def print_players(self):
+        print('{} is playing Tic Tac Toe with {}'.format(self.player1, self.player2))
+(sample_module) (base) flanuer@agustins-mbp sample_module % python3 spring_guide.py
+python3: can't open file 'spring_guide.py': [Errno 2] No such file or directory
+(sample_module) (base) flanuer@agustins-mbp sample_module % pyton3 sprint_guide.py 
+zsh: command not found: pyton3
+(sample_module) (base) flanuer@agustins-mbp sample_module % python3 sprint_guide.py
+(sample_module) (base) flanuer@agustins-mbp sample_module % python3 
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sprint_guide.py
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'sprint_guide.py'; 'sprint_guide' is not a package
+>>> exit()
+(sample_module) (base) flanuer@agustins-mbp sample_module % exit      
+(base) flanuer@agustins-mbp sample_module % ls
+LICENSE		Pipfile		Pipfile.lock	README.md	sprint_guide.py
+(base) flanuer@agustins-mbp sample_module % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Pipfile
+	Pipfile.lock
+	sprint_guide.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) flanuer@agustins-mbp sample_module % git add .
+(base) flanuer@agustins-mbp sample_module % git commit -m 'added Pipfile and Pipfile.lock through terminal by running an pipenv install numpy and pandas command on terminal'
+[master 4fa4529] added Pipfile and Pipfile.lock through terminal by running an pipenv install numpy and pandas command on terminal
+ 3 files changed, 190 insertions(+)
+ create mode 100644 Pipfile
+ create mode 100644 Pipfile.lock
+ create mode 100644 sprint_guide.py
+(base) flanuer@agustins-mbp sample_module % git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 3.97 KiB | 3.97 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/AVData/sample_module.git
+   8c67340..4fa4529  master -> master
+(base) flanuer@agustins-mbp sample_module % ls
+LICENSE		Pipfile		Pipfile.lock	README.md	sprint_guide.py
+(base) flanuer@agustins-mbp sample_module % mkdir sprint_guide_test
+(base) flanuer@agustins-mbp sample_module % ls       
+LICENSE			Pipfile.lock		sprint_guide.py
+Pipfile			README.md		sprint_guide_test
+(base) flanuer@agustins-mbp sample_module % mv sprint_guide.py sprint_guide_test
+(base) flanuer@agustins-mbp sample_module % ls
+LICENSE			Pipfile			Pipfile.lock		README.md		sprint_guide_test
+(base) flanuer@agustins-mbp sample_module % cd sprint_guide_test
+(base) flanuer@agustins-mbp sprint_guide_test % ls
+sprint_guide.py
+(base) flanuer@agustins-mbp sprint_guide_test % mv sprint_guide.py __init__.py
+(base) flanuer@agustins-mbp sprint_guide_test % ls
+__init__.py
+(base) flanuer@agustins-mbp sprint_guide_test % touch df_utils.py
+(base) flanuer@agustins-mbp sprint_guide_test % ls
+__init__.py	df_utils.py
+(base) flanuer@agustins-mbp sprint_guide_test % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+(base) flanuer@agustins-mbp sprint_guide_test % cd ..
+(base) flanuer@agustins-mbp sample_module % ls
+LICENSE			Pipfile			Pipfile.lock		README.md		sprint_guide_test
+(base) flanuer@agustins-mbp sample_module % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sprint_guide_test
+>>> dir(sprint_guide_test)
+['Game', 'Tic', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', 'game1', 'random']
+>>> game1 = Game
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Game' is not defined
+>>> game1 = Game()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Game' is not defined
+>>> Game
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Game' is not defined
+>>> from sprint_guide_test import GAme
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: cannot import name 'GAme' from 'sprint_guide_test' (/Users/flanuer/Downloads/Nitsuga/Lambda/sample_module/sprint_guide_test/__init__.py)
+>>> from sprint_guide_test import GAme
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: cannot import name 'GAme' from 'sprint_guide_test' (/Users/flanuer/Downloads/Nitsuga/Lambda/sample_module/sprint_guide_test/__init__.py)
+>>> from sprint_guide_test import Game
+>>> Game
+<class 'sprint_guide_test.Game'>
+>>> game1 = Game()
+>>> game1.print_players
+<bound method Game.print_players of <sprint_guide_test.Game object at 0x1023beed0>>
+>>> game1.rounds = 3
+>>> game1.rounds
+3
+>>> game1.player1
+'Cody'
+>>> exit()
+(base) flanuer@agustins-mbp sample_module % ls
+LICENSE			Pipfile			Pipfile.lock		README.md		sprint_guide_test
+(base) flanuer@agustins-mbp sample_module % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    sprint_guide.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	sprint_guide_test/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) flanuer@agustins-mbp sample_module % git add .
+(base) flanuer@agustins-mbp sample_module % git commit -m 'created a folder contaning the file sprint_guide.py, to run as a module, and be imported through the command line from sample_module import sprint_guide_test'
+[master 88959fd] created a folder contaning the file sprint_guide.py, to run as a module, and be imported through the command line from sample_module import sprint_guide_test
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename sprint_guide.py => sprint_guide_test/__init__.py (100%)
+ create mode 100644 sprint_guide_test/df_utils.py
+(base) flanuer@agustins-mbp sample_module % git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 452 bytes | 452.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/AVData/sample_module.git
+   4fa4529..88959fd  master -> master
+(base) flanuer@agustins-mbp sample_module % 

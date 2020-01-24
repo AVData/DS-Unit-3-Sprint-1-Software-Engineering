@@ -1,0 +1,695 @@
+Last login: Fri Jan 17 02:14:53 on ttys003
+(base) flanuer@agustins-mbp sample_module % ls
+LICENSE			Pipfile			Pipfile.lock		README.md		sprint_guide_test
+(base) flanuer@agustins-mbp sample_module % cd ..
+(base) flanuer@agustins-mbp lambda % ls
+Course_material				__pycache__				hw.py
+DS-Unit-3-Sprint-1-Software-Engineering	command-line-cheat-sheet-large01.png	imp_docs
+LambData				command-line-cheat-sheet-large02.png	sample_module
+Precourse				ebooks
+(base) flanuer@agustins-mbp lambda % cd .. 
+(base) flanuer@agustins-mbp nitsuga % ls
+Lambda
+(base) flanuer@agustins-mbp nitsuga % cd ..
+(base) flanuer@agustins-mbp downloads % ls
+Nitsuga		Personal	challenge.md	~$ CHLA1.docx
+(base) flanuer@agustins-mbp downloads % cd ..
+(base) flanuer@agustins-mbp ~ % ls
+Applications		Desktop			Downloads		Movies			Pictures		lambdata
+Creative Cloud Files	Documents		Library			Music			Public			opt
+(base) flanuer@agustins-mbp ~ % cd downloads
+(base) flanuer@agustins-mbp downloads % ls
+Nitsuga		Personal	challenge.md	~$ CHLA1.docx
+(base) flanuer@agustins-mbp downloads % atom .          
+(base) flanuer@agustins-mbp downloads % cd nitsuga
+(base) flanuer@agustins-mbp nitsuga % .s
+zsh: command not found: .s
+(base) flanuer@agustins-mbp nitsuga % ls
+Lambda
+(base) flanuer@agustins-mbp nitsuga % cd lambda 
+(base) flanuer@agustins-mbp lambda % ls
+Course_material				__pycache__				hw.py
+DS-Unit-3-Sprint-1-Software-Engineering	command-line-cheat-sheet-large01.png	imp_docs
+LambData				command-line-cheat-sheet-large02.png	sample_module
+Precourse				ebooks
+(base) flanuer@agustins-mbp lambda % cd sample_module
+(base) flanuer@agustins-mbp sample_module % ls
+LICENSE			Pipfile.lock		challenge.md
+Pipfile			README.md		sprint_guide_test
+(base) flanuer@agustins-mbp sample_module % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	challenge.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) flanuer@agustins-mbp sample_module % git add .
+(base) flanuer@agustins-mbp sample_module % git commit -m 'added the challenge.md file for the sprint challenge'
+[master 8845df8] added the challenge.md file for the sprint challenge
+ 1 file changed, 280 insertions(+)
+ create mode 100644 challenge.md
+(base) flanuer@agustins-mbp sample_module % git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 4.50 KiB | 4.50 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/AVData/sample_module.git
+   88959fd..8845df8  master -> master
+(base) flanuer@agustins-mbp sample_module % cd ..
+(base) flanuer@agustins-mbp lambda % ls
+Course_material				__pycache__				hw.py
+DS-Unit-3-Sprint-1-Software-Engineering	command-line-cheat-sheet-large01.png	imp_docs
+LambData				command-line-cheat-sheet-large02.png	sample_module
+Precourse				ebooks
+(base) flanuer@agustins-mbp lambda % cd DS-unit-3-sprint-1-software-engineering
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % ls
+challenge.md						module2-oop-code-style-and-reviews
+lamb.jpg						module3-containers-and-reproducible-builds
+module1-python-modules-packages-and-environments	module4-software-testing-documentation-and-licensing
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    LICENSE
+	deleted:    README.md
+	modified:   module1-python-modules-packages-and-environments/README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	challenge.md
+	module1-python-modules-packages-and-environments/.DS_Store
+	module1-python-modules-packages-and-environments/LICENSE
+	module1-python-modules-packages-and-environments/assignment_1.py
+	module2-oop-code-style-and-reviews/oop_examples.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % git add .
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % git commit -m 'added chellenge.md file to begin sprint challenge'
+[master 7016e7b] added chellenge.md file to begin sprint challenge
+ 7 files changed, 327 insertions(+), 1 deletion(-)
+ create mode 100644 .DS_Store
+ create mode 100644 challenge.md
+ create mode 100644 module1-python-modules-packages-and-environments/.DS_Store
+ rename LICENSE => module1-python-modules-packages-and-environments/LICENSE (100%)
+ rename README.md => module1-python-modules-packages-and-environments/README.md (93%)
+ create mode 100644 module1-python-modules-packages-and-environments/assignment_1.py
+ create mode 100644 module2-oop-code-style-and-reviews/oop_examples.py
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % git push
+To https://github.com/AVData/DS-Unit-3-Sprint-1-Software-Engineering.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/AVData/DS-Unit-3-Sprint-1-Software-Engineering.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % git pull
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Total 3 (delta 2), reused 2 (delta 2), pack-reused 1
+Unpacking objects: 100% (3/3), done.
+From https://github.com/AVData/DS-Unit-3-Sprint-1-Software-Engineering
+   454cd12..fbff65a  master     -> origin/master
+CONFLICT (modify/delete): README.md deleted in HEAD and modified in fbff65ab988b2e52cc770b155fafa59615fc59fe. Version fbff65ab988b2e52cc770b155fafa59615fc59fe of README.md left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % git add .
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+	new file:   README.md
+
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % git commit -m 'added challenge.md'
+[master ad32210] added challenge.md
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % git push
+Enumerating objects: 20, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (12/12), 7.06 KiB | 7.06 MiB/s, done.
+Total 12 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/AVData/DS-Unit-3-Sprint-1-Software-Engineering.git
+   fbff65a..ad32210  master -> master
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % ls
+README.md						module2-oop-code-style-and-reviews
+challenge.md						module3-containers-and-reproducible-builds
+lamb.jpg						module4-software-testing-documentation-and-licensing
+module1-python-modules-packages-and-environments
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % atom .
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % ls
+README.md						module1-python-modules-packages-and-environments
+acme.py							module2-oop-code-style-and-reviews
+challenge.md						module3-containers-and-reproducible-builds
+lamb.jpg						module4-software-testing-documentation-and-licensing
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 shell
+python3: can't open file 'shell': [Errno 2] No such file or directory
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % pipenv shell
+Creating a virtualenv for this project…
+Pipfile: /Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/Pipfile
+Using /Users/flanuer/opt/anaconda3/bin/python (3.7.4) to create virtualenv…
+⠧ Creating virtual environment...Already using interpreter /Users/flanuer/opt/anaconda3/bin/python
+Using base prefix '/Users/flanuer/opt/anaconda3'
+New python executable in /Users/flanuer/.local/share/virtualenvs/DS-Unit-3-Sprint-1-Software-Engineering-iFlIZFPg/bin/python
+Installing setuptools, pip, wheel...
+done.
+
+✔ Successfully created virtual environment! 
+Virtualenv location: /Users/flanuer/.local/share/virtualenvs/DS-Unit-3-Sprint-1-Software-Engineering-iFlIZFPg
+Creating a Pipfile for this project…
+Launching subshell in virtual environment…
+ . /Users/flanuer/.local/share/virtualenvs/DS-Unit-3-Sprint-1-Software-Engineering-iFlIZFPg/bin/activate
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering %  . /Users/flanuer/.local/share/virtualenvs/DS-Unit-3-Sprint-1-Software-Engineering-iFlIZFPg/bin/activate
+(DS-Unit-3-Sprint-1-Software-Engineering) (base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % ls
+Pipfile							module1-python-modules-packages-and-environments
+README.md						module2-oop-code-style-and-reviews
+acme.py							module3-containers-and-reproducible-builds
+challenge.md						module4-software-testing-documentation-and-licensing
+lamb.jpg
+(DS-Unit-3-Sprint-1-Software-Engineering) (base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from DS-unit-3-sprint-1-software-engineering import acme
+  File "<stdin>", line 1
+    from DS-unit-3-sprint-1-software-engineering import acme
+           ^
+SyntaxError: invalid syntax
+>>> exit()
+(DS-Unit-3-Sprint-1-Software-Engineering) (base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % cd ..
+(DS-Unit-3-Sprint-1-Software-Engineering) (base) flanuer@agustins-mbp lambda % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import DS-unit-3-sprint-1-software-engineering
+  File "<stdin>", line 1
+    import DS-unit-3-sprint-1-software-engineering
+             ^
+SyntaxError: invalid syntax
+>>> import acme
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'acme'
+>>> exit()
+(DS-Unit-3-Sprint-1-Software-Engineering) (base) flanuer@agustins-mbp lambda % exit
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % ls
+Pipfile							module1-python-modules-packages-and-environments
+README.md						module2-oop-code-style-and-reviews
+acme.py							module3-containers-and-reproducible-builds
+challenge.md						module4-software-testing-documentation-and-licensing
+lamb.jpg
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Product
+>>> prod = Prodcut('A cool toy')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Prodcut' is not defined
+>>> prod = Product('A cool toy')
+Enter roduct name: 'A cool toy')
+>>> prod.name
+"'A cool toy')"
+>>> from acme import Product
+>>> prod = Product('A cool toy')
+Enter roduct name: 
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Product
+>>> prod = Product('A cool toy')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 13, in __init__
+    self.name = name
+NameError: name 'name' is not defined
+>>> prod
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'prod' is not defined
+>>> prod = Product('a cool toy')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 13, in __init__
+    self.name = name
+NameError: name 'name' is not defined
+>>> exit(0
+... 
+... exit()
+  File "<stdin>", line 3
+    exit()
+       ^
+SyntaxError: invalid syntax
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % ls
+Pipfile							lamb.jpg
+README.md						module1-python-modules-packages-and-environments
+__pycache__						module2-oop-code-style-and-reviews
+acme.py							module3-containers-and-reproducible-builds
+challenge.md						module4-software-testing-documentation-and-licensing
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Product
+>>> prod = Product('A cool toy')
+>>> prod.name
+'A cool toy'
+>>> prod.price
+10
+>>> prod.weight
+20
+>>> prod.flammability
+0.5
+>>> prod.identifier
+77511541
+>>> exit(0
+... 
+... 
+... 
+... e
+  File "<stdin>", line 5
+    e
+    ^
+SyntaxError: invalid syntax
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % ls
+Pipfile							lamb.jpg
+README.md						module1-python-modules-packages-and-environments
+__pycache__						module2-oop-code-style-and-reviews
+acme.py							module3-containers-and-reproducible-builds
+challenge.md						module4-software-testing-documentation-and-licensing
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Product
+>>> prod = Product('A Cool Toy')
+>>> prod.stealability()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 23, in stealability
+    self.price = float(price/weight)
+NameError: name 'price' is not defined
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % ls
+Pipfile							lamb.jpg
+README.md						module1-python-modules-packages-and-environments
+__pycache__						module2-oop-code-style-and-reviews
+acme.py							module3-containers-and-reproducible-builds
+challenge.md						module4-software-testing-documentation-and-licensing
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Product
+>>> prod = Product('A Cool Toy')
+>>> prod.stealability()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: stealability() missing 2 required positional arguments: 'price' and 'weight'
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Product
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 19
+    def stealability(self,  self.price, self.weight):
+                                ^
+SyntaxError: invalid syntax
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Product
+>>> prod = Product('A Cool Toy')
+>>> prod.stealability()
+Kinda stealable.
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import Prouduct
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: cannot import name 'Prouduct' from 'acme' (/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py)
+>>> form acme import Product
+  File "<stdin>", line 1
+    form acme import Product
+            ^
+SyntaxError: invalid syntax
+>>> from acme import Product
+>>> prod = Product('A Cool Toy')
+>>> prod.stealability
+<bound method Product.stealability of <acme.Product object at 0x10874ec90>>
+>>> prod.stealability()
+Kinda stealable.
+>>> prod.explode()
+...boom!
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import BoxingGlove
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 43, in <module>
+    prod = Product()
+TypeError: __init__() missing 1 required positional argument: 'name'
+>>> glove = BoxingGlove('Punchy the Third')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'BoxingGlove' is not defined
+>>> from acme import BoxingGlove
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 43, in <module>
+    prod = Product()
+TypeError: __init__() missing 1 required positional argument: 'name'
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import BoxingGlove
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 43, in <module>
+    prod = Product()
+TypeError: __init__() missing 1 required positional argument: 'name'
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import BoxingGlove
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 43, in <module>
+    prod = Product()
+TypeError: __init__() missing 1 required positional argument: 'name'
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import BoxingGlove
+>>> glove = BoxingGlove('Punchy the Third')
+>>> glove.price
+10
+>>> from acme import BoxingGlove
+>>> glove.explode()
+...boom!
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import BoxingGlove
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 51
+    '''
+      ^
+IndentationError: expected an indented block
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import BoxingGlove
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/flanuer/Downloads/Nitsuga/Lambda/DS-Unit-3-Sprint-1-Software-Engineering/acme.py", line 51
+    '''
+      ^
+IndentationError: expected an indented block
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import BoxingGlove
+>>> glove = BoxingGlove('Punchy the Third')
+>>> glove.price
+10
+>>> glove.explode()
+...it's a glove.
+>>> glove.punch
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'BoxingGlove' object has no attribute 'punch'
+>>> glove.punch()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'BoxingGlove' object has no attribute 'punch'
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import BoxingGlove
+>>> glove = BoxingGlove('Punchy the Third')
+>>> glove.price()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not callable
+>>> glove.price
+10
+>>> glove.weight
+20
+>>> glove.punch
+<bound method BoxingGlove.punch of <acme.BoxingGlove object at 0x1016a5850>>
+>>> glove.explode()
+...it's a glove.
+>>> glove.punch()
+OUCH!
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import BoxingGlove
+>>> glove.weight
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'glove' is not defined
+>>> from acme import BoxingGlove
+>>> glove = BoxingGlove('Punchy the Third')
+>>> glove.weight
+20
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import BoxingGlove
+>>> glove = BoxingGlove('Punchy the Third')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: __init__() missing 1 required positional argument: 'weight'
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from acme import BoxingGlove
+>>> glove = BoxingGlove('punchy the third')
+>>> glove.weight
+10
+>>> glove.punch()
+Hey that hurt!
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3
+Python 3.7.4 (default, Aug 13 2019, 15:17:50) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit(0
+... 
+... exit
+  File "<stdin>", line 3
+    exit
+       ^
+SyntaxError: invalid syntax
+>>> exit()
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % ls      
+Pipfile							lamb.jpg
+README.md						module1-python-modules-packages-and-environments
+__pycache__						module2-oop-code-style-and-reviews
+acme.py							module3-containers-and-reproducible-builds
+acme_report.py						module4-software-testing-documentation-and-licensing
+challenge.md
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+ACME CORPORATION INVENTORY REPORT 
+ Unique product names: {len(set(products))} 
+ Average price: {sum(price)/len(products)} 
+ Average weight: {sum(weight)/len(products)} 
+ Average Flammability: {sum(flammability)/len(products)}
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+ACME CORPORATION INVENTORY REPORT 
+ Unique product names:  19 
+ Average price: {sum(price)/len(products)} 
+ Average weight: {sum(weight)/len(products)} 
+ Average Flammability: {sum(flammability)/len(products)}
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+Traceback (most recent call last):
+  File "acme_report.py", line 45, in <module>
+    inventory_report(generate_products())
+  File "acme_report.py", line 40, in inventory_report
+    'Average price: ', sum(price)/len(products), '\n',
+NameError: name 'price' is not defined
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+Traceback (most recent call last):
+  File "acme_report.py", line 45, in <module>
+    inventory_report(generate_products())
+  File "acme_report.py", line 39, in inventory_report
+    'Unique product names: ', len(set(products)), '\n',
+TypeError: unhashable type: 'list'
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+ACME CORPORATION INVENTORY REPORT 
+ Unique product names:  17 
+
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+Traceback (most recent call last):
+  File "acme_report.py", line 45, in <module>
+    inventory_report(generate_products())
+  File "acme_report.py", line 40, in inventory_report
+    'Average price: ', sum(price)/len(products), '\n',)
+NameError: name 'price' is not defined
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+Traceback (most recent call last):
+  File "acme_report.py", line 45, in <module>
+    inventory_report(generate_products())
+  File "acme_report.py", line 39, in inventory_report
+    'Unique product names: ', len(set(products)), '\n',
+TypeError: unhashable type: 'list'
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+Traceback (most recent call last):
+  File "acme_report.py", line 45, in <module>
+    inventory_report(generate_products())
+  File "acme_report.py", line 39, in inventory_report
+    'Unique product names: ', len(set(products)), '\n',
+TypeError: unhashable type: 'list'
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+Traceback (most recent call last):
+  File "acme_report.py", line 45, in <module>
+    inventory_report(generate_products())
+  File "acme_report.py", line 30, in generate_products
+    return (products, price)
+NameError: name 'price' is not defined
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+Traceback (most recent call last):
+  File "acme_report.py", line 45, in <module>
+    inventory_report(generate_products())
+  File "acme_report.py", line 30, in generate_products
+    return (products, price)
+NameError: name 'price' is not defined
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+Traceback (most recent call last):
+  File "acme_report.py", line 45, in <module>
+    inventory_report(generate_products())
+  File "acme_report.py", line 39, in inventory_report
+    'Unique product names: ', len(set(products)), '\n',
+TypeError: unhashable type: 'list'
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+Traceback (most recent call last):
+  File "acme_report.py", line 45, in <module>
+    inventory_report(generate_products())
+  File "acme_report.py", line 40, in inventory_report
+    'Average price: ', (sum(price)/30), '\n',)
+NameError: name 'price' is not defined
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+Traceback (most recent call last):
+  File "acme_report.py", line 45, in <module>
+    inventory_report(generate_products())
+  File "acme_report.py", line 40, in inventory_report
+    'Average price: ', (sum(price)/30), '\n',)
+NameError: name 'price' is not defined
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+Traceback (most recent call last):
+  File "acme_report.py", line 45, in <module>
+    inventory_report(generate_products())
+TypeError: inventory_report() missing 3 required positional arguments: 'price', 'weight', and 'flammability'
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+Traceback (most recent call last):
+  File "acme_report.py", line 45, in <module>
+    inventory_report(generate_products())
+  File "acme_report.py", line 39, in inventory_report
+    'Unique product names: ', len(set(products)), '\n',)
+TypeError: unhashable type: 'list'
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+ACME CORPORATION INVENTORY REPORT 
+ Unique product names:  17 
+
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+  File "acme_report.py", line 45
+    if __name__ == '__main__':
+                             ^
+SyntaxError: invalid syntax
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_report.py
+ACME CORPORATION INVENTORY REPORT 
+ Unique product names:  19 
+ Average price:  54.766666666666666 
+ Average weight:  57.46666666666667 
+ Average Flammability:  1.2814101287796575
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % ls
+Pipfile							lamb.jpg
+README.md						module1-python-modules-packages-and-environments
+__pycache__						module2-oop-code-style-and-reviews
+acme.py							module3-containers-and-reproducible-builds
+acme_report.py						module4-software-testing-documentation-and-licensing
+challenge.md
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % touch acme_test.py
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % ls
+Pipfile							challenge.md
+README.md						lamb.jpg
+__pycache__						module1-python-modules-packages-and-environments
+acme.py							module2-oop-code-style-and-reviews
+acme_report.py						module3-containers-and-reproducible-builds
+acme_test.py						module4-software-testing-documentation-and-licensing
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % python3 acme_test.py
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+(base) flanuer@agustins-mbp DS-unit-3-sprint-1-software-engineering % 
