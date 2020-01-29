@@ -2,10 +2,16 @@
 
 "Code that works" is good - "code that other people can read" is better.
 
+## My own words:
+- Documentation, comments, and doc strings make good readable code.  
+
 ## Learning Objectives
 
 - create a basic Python class, with a constructor, methods, and fields
 - write stylistic (PEP 8) Python code, and give and receive a basic code review
+
+## My own words:
+- The python class created was Game(), and the daughter class was Tic(Game).  For a thorough explenation follow the link: https://stackoverflow.com/questions/8985806/python-constructors-and-init
 
 ## Before Lecture
 
